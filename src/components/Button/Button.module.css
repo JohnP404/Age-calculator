@@ -1,0 +1,45 @@
+.buttonContainer {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-grey: hsl(0, 0%, 86%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 530px) {
+  .buttonContainer {
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+
+.dividerBorder {
+  position: absolute;
+  z-index: 5;
+  bottom: 50%;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: var(--Light-grey);
+}
+
+.buttonContainer div:has(img) {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  background: var(--Purple);
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: grid;
+  place-content: center;
+}
+
+.buttonContainer div:has(img):hover {
+  background: var(--Off-black);
+}
+
+img {
+  width: 25px;
+  aspect-ratio: 1;
+}

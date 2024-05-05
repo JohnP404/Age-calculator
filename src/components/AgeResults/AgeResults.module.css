@@ -1,0 +1,23 @@
+.resultsContainer {
+  display: grid;
+}
+
+.dNone {
+  display: none;
+}
+
+.ageText {
+  margin: 0;
+  padding: 0;
+  line-height: min(11vmin, 70px);
+  font-size: min(10vmin, 59px);
+  display: inline;
+  color: var(--Off-black);
+  font-weight: 800;
+  font-style: italic;
+}
+
+.ageText.textHighlight {
+  margin-right: 0.4rem;
+  color: var(--Purple);
+}
